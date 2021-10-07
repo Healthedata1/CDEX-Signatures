@@ -1,0 +1,55 @@
+create Virtual env:
+
+ehaas$ python3.7 -m  pip install --upgrade pip
+
+ehaas$ python3.7 -m  virtualenv flask-alerts
+
+ehaas$ source /Users/ehaas/Documents/Python/Venv/flask-alerts/bin/activate
+
+(flask-alerts) Erics-Air-2:Venv ehaas$ pip list
+Package    Version
+---------- -------
+pip        19.3.1
+setuptools 43.0.0
+wheel      0.33.6
+(flask-alerts) Erics-Air-2:Venv ehaas$
+
+(flask-alerts) Erics-Air-2:Venv ehaas$ deactivate
+
+Erics-Air-2:Venv ehaas$
+
+(flask-alerts) Erics-Air-2:Venv ehaas$ pip list
+Package        Version
+-------------- ----------
+certifi        2019.11.28
+chardet        3.0.4
+Click          7.0
+commonmark     0.9.1
+DateTime       4.3
+Flask          1.1.1
+idna           2.8
+itsdangerous   1.1.0
+Jinja2         2.10.3
+MarkupSafe     1.1.1
+pathlib        1.0.1
+pip            19.3.1
+pytz           2019.3
+requests       2.22.0
+setuptools     43.0.0
+urllib3        1.25.7
+uuid           1.30
+Werkzeug       0.16.0
+wheel          0.33.6
+zope.interface 4.7.1
+(flask-alerts) Erics-Air-2:Venv ehaas$
+
+save dependencies as requirements.txt
+
+$ python -m pip freeze > [out_path]
+
+Install the project dependencies
+
+e.g. for fhircast:
+
+$ cd fhircast-docs
+$ pip3 install -r requirements.txt
